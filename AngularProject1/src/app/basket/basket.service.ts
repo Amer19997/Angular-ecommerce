@@ -3,12 +3,14 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
  import { Product } from '../shared/models/product';
 import { Basket, BasketItem, BasketTotals, CustomerBasket } from '../shared/models/basket';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BasketService {
-  baseUrl = "http://localhost:5056/api/";
+  baseUrl = environment.apiUrl;
+
   private basketSource = new BehaviorSubject<Basket | null>(null);
   basketSource$ = this.basketSource.asObservable();
   private basketTotalSource = new BehaviorSubject<BasketTotals | null>(null);
@@ -19,7 +21,7 @@ export class BasketService {
   }
   
   getBasket(id: string) {
-    return this.http.get<Basket>(this.baseUrl + 'basket?id=' + id).subscribe({
+    return this.http.get<Basket>(this.baseUrl + '/basket?id=' + id).subscribe({
       next: basket => {
         this.basketSource.next(basket);
         this.calculateTotals();
@@ -27,7 +29,7 @@ export class BasketService {
     })
   }
   setBasket(basket: Basket) {
-    return this.http.post<Basket>(this.baseUrl + 'basket', basket).subscribe({
+    return this.http.post<Basket>(this.baseUrl + '/basket', basket).subscribe({
       next: basket => {
         this.basketSource.next(basket);
         this.calculateTotals();
