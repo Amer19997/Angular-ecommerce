@@ -1,48 +1,9 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
 
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
-
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
-
-# IDEs and editors
-.idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
-
-# Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
-
-# System files
-.DS_Store
-Thumbs.db
-/.vs/AngularProject1/FileContentIndex/2f6e9749-5c8d-4519-b53a-601d5a6a525b.vsidx
-/.vs/AngularProject1/FileContentIndex/79e1af00-0746-4871-b2f0-81ebd15cef8b.vsidx
+/.vs/AngularProject1/FileContentIndex/1a188c2d-88c1-474f-9523-331b9d886a57.vsidx
+/.vs/AngularProject1/FileContentIndex/7529a78a-8708-4d93-b5fd-676b1db3b6c9.vsidx
 /.vs/AngularProject1/FileContentIndex/9a376423-1fce-4721-b3e2-d5db9011f4f2.vsidx
 /.vs/AngularProject1/FileContentIndex/b226da47-7dc5-4f12-82e9-c87f7a598a2d.vsidx
-/.vs/AngularProject1/FileContentIndex/c64cbec9-5f1a-48c7-a865-8d5f8c584fd7.vsidx
-/.vs/AngularProject1/FileContentIndex/5daf7b11-36e4-4e3b-8e03-fdc9c5eb8c0d.vsidx
+/.vs/AngularProject1/FileContentIndex/e8082757-4777-421d-99a5-766fcdeb1cd4.vsidx
